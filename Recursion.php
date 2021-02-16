@@ -2,7 +2,7 @@
 
 // Use recursion to compute the Fibonacci number of a given integer.
 
-class Recursion
+class Recursion implements SolutionInterface
 {
     public function fibonacciNumber(int $number): int
     {
