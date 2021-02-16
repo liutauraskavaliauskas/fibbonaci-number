@@ -4,9 +4,9 @@
 //We can achieve O(1)O(1) space complexity by only storing the value
 //of the two previous numbers and updating them as we iterate to N.
 
-class IterativeTopDownApproach implements SolutionInterface
+class IterativeTopDownApproach extends AbstractSolution
 {
-    public function fibonacciNumber(int $number): int
+    public function getFibonacciNumber(int $number): int
     {
         if ($number <= 1) {
             return $number;

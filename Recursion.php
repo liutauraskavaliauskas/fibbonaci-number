@@ -2,9 +2,9 @@
 
 // Use recursion to compute the Fibonacci number of a given integer.
 
-class Recursion implements SolutionInterface
+class Recursion extends AbstractSolution
 {
-    public function fibonacciNumber(int $number): int
+    public function getFibonacciNumber(int $number): int
     {
         if ($number <= 1) {
             return $number;

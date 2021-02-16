@@ -3,12 +3,12 @@
 //Solve for all of the sub-problems, use memoization to store the pre-computed answers, then return the answer for N.
 //We will leverage recursion, but in a smarter way by not repeating the work to calculate existing values.
 
-class TopDownMemoization implements SolutionInterface
+class TopDownMemoization extends AbstractSolution
 {
     /** @var int[] */
     private $cache = [0, 1];
 
-    public function fibonacciNumber(int $number): int
+    public function getFibonacciNumber(int $number): int
     {
         if ($number <= 1) {
             return $number;

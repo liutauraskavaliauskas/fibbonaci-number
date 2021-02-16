@@ -5,9 +5,9 @@
 // In using a bottom-up approach, we can iteratively compute
 // and store the values, only returning once we reach the result.
 
-class BottomUpMemoization implements SolutionInterface
+class BottomUpMemoization extends AbstractSolution
 {
-    public function fibonacciNumber(int $number): int
+    public function getFibonacciNumber(int $number): int
     {
         if ($number <= 1) {
             return $number;
